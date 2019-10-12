@@ -1,0 +1,45 @@
+.c-list__item{
+    margin-bottom: 7px;
+    display: table;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.c-list__arrow{    
+    position: relative;    
+    fill: var(--primary);
+    width: 7px;
+    height: 12px;
+    display: table-cell;
+}
+
+.c-list__text{
+    display: table-cell;
+    padding-left: 8px;
+}
+
+.c-list__arrow--white{
+    fill: #fff;
+}
+
+.c-list__arrow--black{
+    fill: #333;
+}
+
+@media(min-width: $tablet-up){
+    .c-list__text{
+        font-size: 18px;
+    }
+    
+    .c-list__text.motoristas-list{
+         font-size: 15px;
+    }
+}
+
+@media(min-width: $tablet){
+    .c-list__text.motoristas-list{
+         font-size: 18px;
+    }
+}

@@ -1,0 +1,43 @@
+/* -------
+COLORS
+--------------*/
+:root{
+    --primary: #e63b4f;
+    --hover-primary: #ca3143; 
+    
+    --secondary: #323233;
+    --hover-secondary: #000;
+    
+
+    --color-tertiary: #5d76b6;
+
+    --color-quartenary: #20CFB2;
+
+    --blue: #02baef;
+    
+    --gray: #f6f6f6; 
+    --gray2: #ebebf0; 
+    
+    --gray-hard: #474747; 
+
+    --color-facebook: #37559C;
+    --hover-facebook: #2d4682;
+}
+
+
+
+/* -------
+MEDIA QUERY
+--------------*/
+$mobile-medium: 375px;
+$mobile-big: 425px;
+$tablet-up: 768px;
+$tablet: 992px;
+$res-HD: 1200px;
+
+/* -------
+ANIMATION
+--------------*/
+$anim-slow: 1s;
+$anim-normal: .3s;
+$anim-fast: .15s;

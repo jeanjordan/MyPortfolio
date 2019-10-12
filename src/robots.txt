@@ -1,0 +1,4 @@
+Disallow: /project/
+Disallow: /en-us/
+Disallow: /fr-ca/
+Sitemap: http://www.jeanjordan.com.br/sitemap.xml

@@ -1,0 +1,143 @@
+.c-banner{
+    padding:0;
+}
+
+.c-banner__photo--me{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 50px rgba(0,0,0,.2);
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);    
+}
+
+#clickMe{
+    cursor: pointer;
+}
+
+#clickMe:active #me1{
+    display: none;
+}
+
+#clickMe:active #me2{
+    display: block !important;
+}
+
+
+.c-banner__title-site1{
+    font-size: 28px;
+    font-weight: lighter;
+    margin: auto;     
+}
+
+.c-banner__title-site2{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal;
+    display: block;
+}
+.c-banner__title-site3{
+    font-size: 24px;
+    display: block;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.c-banner-square1{
+    position: absolute;
+    z-index: 1;
+    top: -360px;
+    width: 620px;
+    height: auto;
+    left: -200px;
+}
+
+.c-banner-square2{
+    position: absolute;
+    z-index: 1;
+    bottom: -410px;
+    width: 620px;
+    height: auto;
+    left: 30px;
+}
+
+@media(min-width: $tablet-up){
+    .c-banner{
+        margin-top: 0px;
+    }
+
+    .c-banner__photo--me{
+        width: 90%;
+    }
+
+    .c-banner-square1{
+        top: -520px;
+        width: 860px;        
+        left: 40px;
+    }
+    .c-banner-square2{
+        bottom: -390px;
+        width: 560px;
+        height: auto;
+        left: 50%;      
+    }
+}
+
+
+@media(min-width: $tablet){
+    .c-banner__photo--me{
+        width: 70%;
+    }
+
+    .c-banner-square1 {
+        top: -620px;
+        width: 1030px;
+        left: 40px;
+    }
+
+    
+}
+
+@media(min-width: $res-HD){
+    .c-banner-square1 {
+        top: -740px;
+        width: 1210px;
+        left: 40px;
+    }
+
+    .c-banner-square2 {
+        left: 81%;
+    }
+
+    .c-banner{
+        
+        margin-top: 0px;
+    }
+    
+    .c-banner__desc-site{
+        width: 70%;
+    }
+    
+    .c-banner__title-site1{
+        font-size: 38px;
+    }
+    
+    .c-banner__title-site2{
+        font-size: 52px;
+    }
+    
+    .c-banner__title-site3{
+        font-size: 35px;
+    }
+    
+    .c-banner__photo--me{
+        width: 75%;
+    }
+}
+
+.e-hide{
+    display: none;
+}

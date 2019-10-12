@@ -1,0 +1,21 @@
+ErrorDocument 404 /404.html
+
+# mod_rewrite starts here
+
+RewriteEngine on 
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#check for file in directory with .html extention
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Here we actually show the page that has the .html extenstion
+
+RewriteRule ^(.*)$ $1.html [NC,L] 
+
+RewriteCond %{HTTP_HOST} !^www.jeanjordan.com.br$ [NC]
+RewriteRule ^(.*)$ http://www.jeanjordan.com.br/$1 [L,R=301]
+
+RewriteCond %{HTTPS} on
+RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

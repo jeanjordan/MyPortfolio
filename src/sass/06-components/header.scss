@@ -1,0 +1,48 @@
+
+.header{
+    display: flex;
+    width: 100%;
+    z-index: 6;    
+    padding: 10px 0;
+    position: relative;
+    @include animation-transition($anim-fast);
+}
+
+.logo-site{
+    width: 70px;    
+    position: relative;   
+    display: inline-block;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (min-width:$tablet-up){
+    .header{
+        padding: 13px;  
+        text-align: left;
+    }
+}
+
+
+@media (min-width:$tablet){
+
+
+
+
+    .logo-site{        
+        width: 90px;        
+        transform: none;
+    }
+}
+
+@media (min-width: $res-HD){
+    .header{
+        padding: 30px;
+    }
+}
+
+
