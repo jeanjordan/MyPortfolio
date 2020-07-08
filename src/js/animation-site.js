@@ -174,7 +174,25 @@ $(document).ready(function() {
 
     //slider sections
 
- 
+ //projects animation LAST PROJECTS
+    var tweenProject6 = new TimelineMax()
+        .from(".js-e-title-section", .5, {
+            opacity: "0",
+        }).staggerFrom('.js-last-project', .7, {
+            y: "-50",
+            opacity: 0
+        }, .3);
 
+
+    var scene = new ScrollMagic.Scene({
+            triggerElement: ".js-e-title-section",
+            reverse: false
+
+        })
+        .setTween(tweenProject6)
+        /*.addIndicators({
+            name: "3 (duration: 0)"
+        }) //add indicators (requires plugin)*/
+        .addTo(controller);
 
 });

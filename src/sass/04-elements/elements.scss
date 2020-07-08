@@ -137,6 +137,12 @@ h1{
     background: linear-gradient(210deg, #f1f1f1 0%, #fff 100%);
 }
 
+.e-bg-gradient--last-projects{
+    background: #000;
+    background: linear-gradient(210deg, #000 0%, #1a1a1a 100%);
+    color: #fff;
+}
+
 .e-color-white{
     color: #fff;
 }
@@ -144,7 +150,6 @@ h1{
 .e-mask{    
     margin-bottom:-10px;
     width: 100%;
-
 }
 
 .e-second-wave{
@@ -217,3 +222,7 @@ h1{
     }
 }
 
+.e-title-last-project{
+    color: #fff;
+    font-size: 18px
+}
