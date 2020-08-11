@@ -34,12 +34,13 @@ $(document).ready(function() {
     //projects animation SECTION 1
 
     var tweenProject = new TimelineMax()
-        .from(".js-img-project", .5, {
+        .from(".js-img-project", .4, {
             opacity: "0",
-        }).staggerFrom(['.js-title-project', '.js-description-project', '.js-btn-project'], .7, {
-            y: "-50",
-            opacity: 0
-        }, .3);
+        }).staggerFrom(['.js-title-project', '.js-description-project', '.js-btn-project'], .9, {
+            y: "50",
+            opacity: 0,
+            ease: Back.easeOut
+        }, .4);
 
 
     var scene = new ScrollMagic.Scene({
@@ -57,11 +58,12 @@ $(document).ready(function() {
     //projects animation SECTION 2
 
     var tweenProject2 = new TimelineMax()
-        .from(".js-img-project2", .5, {
+        .from(".js-img-project2", .4, {
             opacity: "0",
-        }).staggerFrom(['.js-title-project2', '.js-description-project2', '.js-btn-project2'], .7, {
-            y: "-50",
-            opacity: 0
+        }).staggerFrom(['.js-title-project2', '.js-description-project2', '.js-btn-project2'], .9, {
+            y: "50",
+            opacity: 0,
+            ease: Back.easeOut
         }, .3);
 
 
@@ -80,11 +82,12 @@ $(document).ready(function() {
     //projects animation SECTION 3
 
     var tweenProject3 = new TimelineMax()
-        .from(".js-img-project3", .5, {
+        .from(".js-img-project3", .4, {
             opacity: "0",
-        }).staggerFrom(['.js-title-project3', '.js-description-project3', '.js-btn-project3'], .7, {
-            y: "-50",
-            opacity: 0
+        }).staggerFrom(['.js-title-project3', '.js-description-project3', '.js-btn-project3'], .9, {
+            y: "50",
+            opacity: 0,
+            ease: Back.easeOut
         }, .3);
 
 
@@ -102,11 +105,12 @@ $(document).ready(function() {
     //projects animation SECTION 4
 
     var tweenProject4 = new TimelineMax()
-        .from(".js-img-project4", .5, {
+        .from(".js-img-project4", .4, {
             opacity: "0",
-        }).staggerFrom(['.js-title-project4', '.js-description-project4', '.js-btn-project4'], .7, {
-            y: "-50",
-            opacity: 0
+        }).staggerFrom(['.js-title-project4', '.js-description-project4', '.js-btn-project4'], .9, {
+            y: "50",
+            opacity: 0,
+            ease: Back.easeOut
         }, .3);
 
 
@@ -124,9 +128,9 @@ $(document).ready(function() {
     //projects animation SECTION 5
 
     var tweenProject5 = new TimelineMax()
-        .from(".js-img-project5", .5, {
+        .from(".js-img-project5", .4, {
             opacity: "0",
-        }).staggerFrom(['.js-title-project5', '.js-description-project5'], .7, {
+        }).staggerFrom(['.js-title-project5', '.js-description-project5'], .9, {
             y: "-50",
             opacity: 0
         }, .3).staggerFrom('.e-icon-skill', .3, {
@@ -176,11 +180,12 @@ $(document).ready(function() {
 
  //projects animation LAST PROJECTS
     var tweenProject6 = new TimelineMax()
-        .from(".js-e-title-section", .5, {
+        .from(".js-e-title-section", .4, {
             opacity: "0",
-        }).staggerFrom('.js-last-project', .7, {
-            y: "-50",
-            opacity: 0
+        }).staggerFrom('.js-last-project', .9, {
+            y: "50",
+            opacity: 0,
+            ease: Back.easeOut
         }, .3);
 
 
