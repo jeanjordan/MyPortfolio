@@ -224,5 +224,10 @@ h1{
 
 .e-title-last-project{
     color: #fff;
-    font-size: 18px
+    font-size: 18px;
+
+    &:hover{
+        text-decoration: underline;
+        color: #fff;
+    }
 }
